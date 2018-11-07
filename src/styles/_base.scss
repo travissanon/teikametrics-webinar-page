@@ -1,0 +1,92 @@
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Font
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik/Graphik-Light.otf');
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik/Graphik-Regular.otf');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik/Graphik-Medium.otf');
+  font-weight: $font-weight-medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik/Graphik-Semibold.otf');
+  font-weight: $font-weight-semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik/Graphik-Bold.otf');
+  font-weight: $font-weight-bold;
+  font-style: normal;
+}
+
+// Colors
+$white: #fff;
+$concrete: #f5f5f5;
+$grey: #ebe8e8;
+$black: #2e2b37;
+$baltic-sea: #292533;
+$santas-grey: #9a96a7;
+$mountain-mist: #96939e;
+$portage: #7b81ea;
+$conifer: #b1d254;
+
+// Font sizes
+$font-size-x-small: 12px;
+$font-size-small: 14px;
+$font-size-regular-sm: 15px;
+$font-size-regular: 16px;
+$font-size-regular-lg: 18px;
+$font-size-large: 21px;
+$font-size-x-large: 28px;
+$font-size-xx-large: 38px;
+$font-size-xxx-large: 48px;
+
+// Mixins
+@mixin font-graphik($size: false, $colour: false, $weight: false, $lh: false) {
+  font-family: 'Graphik', sans-serif;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
+
+@mixin button-primary($border-radius: false) {
+  background: $portage;
+  border: 0;
+  height: 44px;
+  vertical-align: middle;
+  width: 150px;
+  @if $border-radius { border-radius: $border-radius; }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-down {
+  @media (max-width: 900px) { @content; }
+}
+@mixin for-desktop-down {
+  @media (max-width: 1200px) { @content; }
+}

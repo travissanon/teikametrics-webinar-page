@@ -1,0 +1,365 @@
+html{
+  overflow-x: hidden;
+}
+
+// Included Plans
+.included {
+  &__container {
+    max-width: 1009px;
+    margin: 100px auto;
+    padding: 0 50px;
+  }
+  &__title {
+    @include font-graphik($font-size-x-large, $baltic-sea, $font-weight-semibold);
+    padding: 5px 0 20px;
+    @include for-tablet-portrait-down {
+      text-align: center;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(283px, 1fr));
+    grid-row-gap: 22px;
+    grid-column-gap: 38px;
+    justify-items: center;
+    max-width: 1000px;
+    @include for-phone-only {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  &__plan {
+    max-width: 283px;
+    @include for-tablet-portrait-down {
+      text-align: center; // max-width: 1fr;
+    }
+  }
+  &__icon {
+    display: inline;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+    height: 20px;
+  }
+  h3 {
+    @include font-graphik($font-size-regular, $portage, $font-weight-medium, 21px);
+    display: inline;
+    margin-bottom: 0;
+    @include for-phone-only {
+      display: block;
+    }
+  }
+  p {
+    @include font-graphik($font-size-regular-sm, $baltic-sea, $font-weight-regular, 21px);
+    max-width: 260px;
+    @include for-tablet-portrait-down {
+      text-align: center;
+    }
+  }
+}
+
+// Free Trial
+.trial {
+  &__container {
+    display: flex;
+    max-width: 1200px;
+    padding: 40px 15px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-around;
+    background: $concrete;
+    margin: 35px auto;
+    @include for-desktop-down {
+      margin: 35px 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &__title {
+    @include font-graphik($font-size-xx-large, $baltic-sea, $font-weight-semibold, 48px);
+    margin: 0;
+    padding-bottom: 0;
+  }
+  &__description {
+    @include font-graphik($font-size-regular-lg, $baltic-sea, $font-weight-light, 28px);
+    max-width: 474px;
+  }
+  .email {
+    &__form {
+      display: inline-block;
+    }
+    &__input {
+      @include font-graphik($font-size-small, $baltic-sea, $font-weight-regular);
+      border: 1.5px solid $grey;
+      border-radius: 6px 0 0 6px;
+      border-right: 0;
+      box-sizing: border-box;
+      height: 64px;
+      padding-left: 19px;
+      vertical-align: middle;
+      width: 282px;
+      &::placeholder {
+        @include font-graphik($font-size-regular, $santas-grey, $font-weight-semibold);
+      }
+      @include for-phone-only {
+        max-width: 160px;
+      }
+    }
+    &__submit-btn {
+      @include font-graphik($font-size-regular, $white, $font-weight-semibold);
+      @include button-primary(0 6px 6px 0);
+      height: 64px;
+      max-width: 184px;
+      @include for-phone-only {
+        max-width: 90px;
+      }
+    }
+  }
+  &__start-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    @include for-phone-only {
+      padding-left: 10px;
+    }
+  }
+  &__start-item {
+    @include font-graphik($font-size-small, $santas-grey, $font-weight-regular);
+    padding: 5px 0;
+    position: relative;
+    @include for-phone-only {
+      font-size: $font-size-x-small;
+    }
+  }
+  &__start-item:not(:first-child) {
+    padding: 5px 0 5px 20px;
+    &::before {
+      display: inline-block;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      content: '';
+      background-color: $santas-grey;
+      position: absolute;
+      top: 50%;
+      left: 9px;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// Sellers
+.sellers {
+  &__container {
+    margin: 50px auto;
+    max-width: 994px;
+    padding: 0 15px;
+    text-align: center;
+  }
+  &__label {
+    @include font-graphik($font-size-small, $conifer, $font-weight-semibold, 44px);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  &__headline {
+    @include font-graphik($font-size-x-large, $baltic-sea, $font-weight-semibold, 38px);
+    margin: 0;
+    margin-bottom: 100px;
+    position: relative;
+    &::after {
+      height: 3px;
+      width: 95px;
+      position: absolute;
+      border-radius: 10px;
+      content: '';
+      background: $portage;
+      bottom: -27px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      display: block;
+    }
+    @include for-phone-only {
+      margin-bottom: 50px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 -40px;
+    padding: 0;
+    @include for-tablet-portrait-down {
+      margin: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    width: 25%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    filter: gray;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    @include for-tablet-portrait-down {
+      margin: 0 5px 15px;
+    }
+    @include for-phone-only {
+      height: 80px;
+    }
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+// Hero
+.hero {
+  &__container {
+    background: $concrete;
+    z-index: -1;
+  }
+  &__dots {
+    position: absolute;
+    z-index: 1;
+  }
+  .dots-left {
+    left: 0%;
+  }
+  .dots-right {
+    left: 60%;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 65px 15px 85px;
+    z-index: 5;
+
+    @include for-desktop-down {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__info {
+    max-width: 100%;
+    z-index: 10;
+  }
+  &__label-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 164px;
+    height: 33px;
+    background: $portage;
+    border-radius: 17px;
+  }
+  &__label {
+    @include font-graphik($font-size-x-small, $white, $font-weight-bold);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  &__title {
+    @include font-graphik($font-size-xxx-large, $baltic-sea, $font-weight-semibold, 54px);
+    letter-spacing: -.51px;
+    max-width: 602px;
+    margin: 29px 0;
+  }
+  &__description {
+    @include font-graphik($font-size-large, $baltic-sea, $font-weight-light, 32px);
+    max-width: 539px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  &__group {
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    @include font-graphik($font-size-regular-lg, $portage, $font-weight-semibold, 54px);
+    margin: 0;
+  }
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 15px;
+  }
+  &__item {
+    @include font-graphik($font-size-regular-sm, $baltic-sea, $font-weight-regular, 32px);
+    position: relative;
+    &:before {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      content: '';
+      background-color: $portage;
+      position: absolute;
+      margin-top: 16px;
+      left: -2.2%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+
+      @include for-phone-only {
+        left: -3.5%;
+      }
+    }
+  }
+  &__form-wrapper {
+    max-width: 100%;
+    margin: 0 40px;
+    @include for-desktop-down {
+      margin: 0;
+    }
+  }
+  &__form {
+    width: 580px;
+    flex-basis: 30%;
+    z-index: 10;
+    @include for-desktop-down {
+      flex-basis: 0%;
+    }
+    @include for-phone-only {
+      width: inherit;
+    }
+  }
+  &__form-title {
+    @include font-graphik($font-size-x-large, $portage, $font-weight-semibold, 54px);
+    letter-spacing: -.3px;
+    margin-top: 0;
+  }
+  &__field-wrapper {
+    display: block;
+    margin-bottom: 20px;
+  }
+  label {
+    @include font-graphik($font-size-regular-sm, $baltic-sea, $font-weight-medium);
+    margin-bottom: 5px;
+    display: block;
+  }
+  input {
+    @include font-graphik($font-size-small, $baltic-sea, $font-weight-regular);
+    display: block;
+    height: 44px;
+    width: 100%;
+    border: 1px solid $grey;
+    box-sizing: border-box; 
+    border-radius: 3px;
+    padding-left: 16px;
+    &::placeholder {
+      @include font-graphik($font-size-small, $santas-grey, $font-weight-medium);
+    }
+  }
+  &__submit-btn {
+    @include font-graphik($font-size-regular-lg, $white, $font-weight-semibold);
+    @include button-primary(3px);
+    width: 100%;
+    height: 56px;
+  }
+}

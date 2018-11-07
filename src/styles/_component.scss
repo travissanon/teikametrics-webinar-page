@@ -1,0 +1,208 @@
+// Logo
+.app-logo {
+  display: inline-block;
+  height: 31px;
+  width: 135px;
+  @include for-tablet-portrait-down {
+    display: none;
+  }
+  &-mobile {
+    display: none;
+    height: 31px;
+    @include for-tablet-portrait-down {
+      display: inline-block;
+    }
+  }
+}
+
+// Header
+.header {
+  height: 64px;
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    justify-content: space-between;
+    padding: 0 48px;
+    @include for-tablet-portrait-down {
+      padding: 0 20px;
+    }
+  }
+  a {
+    @include font-graphik($font-size-small, $baltic-sea, $font-weight-medium, 32px);
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 32px;
+  }
+  .email {
+    &__form {
+      display: inline-block;
+    }
+    &__input {
+      @include font-graphik($font-size-small, $baltic-sea, $font-weight-regular);
+      border: 1.5px solid $grey;
+      border-radius: 3px 0 0 3px;
+      border-right: 0;
+      box-sizing: border-box;
+      height: 44px;
+      padding-left: 19px;
+      vertical-align: middle;
+      max-width: 226px;
+      &::placeholder {
+        @include font-graphik(14px, $santas-grey, $font-weight-semibold);
+      }
+      @include for-phone-only {
+        display: none;
+      }
+    }
+    &__submit-btn {
+      @include font-graphik(14px, $white, $font-weight-semibold);
+      @include button-primary(0 3px 3px 0);
+      @include for-phone-only {
+        border-radius: 3px;
+        width: 120px;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  &__container {
+    max-width: 1390px;
+    margin: 0 auto;
+    padding: 50px 50px 0 50px;
+    @include for-tablet-portrait-down {
+      padding: 30px 15px 0 15px;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include for-tablet-portrait-down {
+      flex-direction: column;
+    }
+  }
+  &__submit-btn {
+    @include font-graphik(14px, $white, $font-weight-semibold);
+    @include button-primary(3px);
+  }
+  &__nav-item {
+    margin: 10px 0;
+  }
+  &__nav-sublist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__nav-subitem-category {
+    @include font-graphik(15px, $baltic-sea, $font-weight-semibold);
+    text-decoration: none;
+    &:hover {
+      color: $portage;
+      transition: all 0.2s;
+    }
+  }
+  &__nav-subitem {
+    list-style: none;
+    margin: 20px 0;
+    @include for-tablet-portrait-down {
+      margin: 10px 0;
+    }
+  }
+  &__nav-subitem-link {
+    @include font-graphik(15px, $mountain-mist, $font-weight-regular, 24px);
+    text-decoration: none;
+    &:hover {
+      color: $portage;
+      transition: all 0.2s;
+    }
+  }
+  &__closure-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 28px 0 0 0;
+    padding: 29px 0;
+    border-top: 2px solid #f2f2f2;
+    @include for-tablet-portrait-down {
+      flex-direction: column;
+    }
+  }
+  &__logo-group {}
+  &__logo-link {
+    line-height: 32px;
+  }
+  &__terms-group {
+    display: flex;
+    padding-top: 8px;
+    margin-bottom: 35px;
+    @include for-tablet-portrait-down {
+      flex-direction: column;
+    }
+  }
+  &__terms-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include for-tablet-portrait-down {
+      flex-direction: column;
+    }
+  }
+  &__terms-item {
+    padding: 0 17px;
+    @include for-tablet-portrait-down {
+      padding: 5px 0;
+    }
+  }
+  &__terms-link {
+    @include font-graphik($font-size-small, $baltic-sea, $font-weight-regular);
+    text-decoration: none;
+  }
+  &__author {
+    @include font-graphik($font-size-small, $baltic-sea, $font-weight-semibold);
+    padding-left: 35px;
+    @include for-tablet-portrait-down {
+      padding: 0;
+      margin-top: 20px;
+    }
+  }
+  &__author-icon {
+    margin: 0 3px;
+  }
+  &__social-group {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    height: 32px;
+    @include for-tablet-portrait-down {
+      justify-content: flex-start;
+    }
+  }
+  &__social-item {
+    margin-left: 25px;
+    @include for-tablet-portrait-down {
+      margin-left: 0;
+      margin-right: 25px;
+    }
+  }
+  &__social-link {
+    padding: 3px;
+  }
+  &__social-icon-wrapper {
+    width: 17px;
+    height: 17px;
+  }
+  &__copyrights {
+    @include font-graphik($font-size-small, $mountain-mist, $font-weight-regular, 32px);
+  }
+}
