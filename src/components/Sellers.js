@@ -17,10 +17,10 @@ const Sellers = () => {
   return (
     <div className="sellers">
       <div className="sellers__container">
-        <small class="sellers__label">
+        <small className="sellers__label">
           Meet our customers
         </small>
-        <h3 class="sellers__headline">
+        <h3 className="sellers__headline">
           A few of our growing list of successful Amazon sellers
         </h3>
         <ul className="sellers__list">

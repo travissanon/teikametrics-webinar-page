@@ -206,3 +206,18 @@
     @include font-graphik($font-size-small, $mountain-mist, $font-weight-regular, 32px);
   }
 }
+
+.subnav {
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    border: 1px solid #E8E8E8;
+
+    &--active {
+      background: pink;
+    }
+  }
+}

@@ -16,65 +16,65 @@ const Footer = () => {
         <div className="footer__nav-wrapper">
           <ul className="footer__nav-list">
             <li className="footer__nav-item">
-              <a href="/" class="footer__nav-subitem-category">Optimize for</a>
+              <a href="/" className="footer__nav-subitem-category">Optimize for</a>
               <ul className="footer__nav-sublist">
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Teikametrics Flywhel</a>
+                  <a href="/" className="footer__nav-subitem-link">Teikametrics Flywhel</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Sponsored Products</a>
+                  <a href="/" className="footer__nav-subitem-link">Sponsored Products</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Insite for FBA</a>
+                  <a href="/" className="footer__nav-subitem-link">Insite for FBA</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Expert Partner Services</a>
+                  <a href="/" className="footer__nav-subitem-link">Expert Partner Services</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Expert Campaign Launch</a>
+                  <a href="/" className="footer__nav-subitem-link">Expert Campaign Launch</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">SPO Managed Services</a>
+                  <a href="/" className="footer__nav-subitem-link">SPO Managed Services</a>
                 </li>
               </ul>
             </li>
             <li className="footer__nav-item">
-              <a href="/" class="footer__nav-subitem-category">Sellers</a>
+              <a href="/" className="footer__nav-subitem-category">Sellers</a>
             </li>
             <li className="footer__nav-item">
-              <a href="/" class="footer__nav-subitem-category">Agencies</a>
+              <a href="/" className="footer__nav-subitem-category">Agencies</a>
             </li>
             <li className="footer__nav-item">
-              <a href="/" class="footer__nav-subitem-category">Company</a>
+              <a href="/" className="footer__nav-subitem-category">Company</a>
               <ul className="footer__nav-sublist">
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Who We Are</a>
+                  <a href="/" className="footer__nav-subitem-link">Who We Are</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Careers</a>
+                  <a href="/" className="footer__nav-subitem-link">Careers</a>
                 </li>
               </ul>
             </li>
             <li className="footer__nav-item">
-              <a href="/" class="footer__nav-subitem-category">Resources</a>
+              <a href="/" className="footer__nav-subitem-category">Resources</a>
               <ul className="footer__nav-sublist">
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Blogs</a>
+                  <a href="/" className="footer__nav-subitem-link">Blogs</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Webinars</a>
+                  <a href="/" className="footer__nav-subitem-link">Webinars</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Ebooks</a>
+                  <a href="/" className="footer__nav-subitem-link">Ebooks</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">TeikaTV</a>
+                  <a href="/" className="footer__nav-subitem-link">TeikaTV</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">SP Optimizer - Help Center</a>
+                  <a href="/" className="footer__nav-subitem-link">SP Optimizer - Help Center</a>
                 </li>
                 <li className="footer__nav-subitem">
-                  <a href="/" class="footer__nav-subitem-link">Insite - Help Center</a>
+                  <a href="/" className="footer__nav-subitem-link">Insite - Help Center</a>
                 </li>
               </ul>
             </li>
@@ -85,22 +85,22 @@ const Footer = () => {
         </div>
         <div className="footer__closure-wrapper">
           <div className="footer__logo-group">
-            <a href="/" class="footer__logo-link">
+            <a href="/" className="footer__logo-link">
               <img src={logo} className="app-logo" alt="logo" />
               <img src={logoMobile} className="app-logo-mobile" alt="logo-mobile" />
             </a>
-            <div class="footer__copyrights">
+            <div className="footer__copyrights">
               Copyright © 2015-17 teikametrics
             </div>
           </div>
           <div className="footer__closure-group">
             <div className="footer__terms-group">
-              <ul class="footer__terms-list">
+              <ul className="footer__terms-list">
                 <li className="footer__terms-item">
-                  <a href="/contact-us" class="footer__terms-link">Privacy Policy</a>
+                  <a href="/contact-us" className="footer__terms-link">Privacy Policy</a>
                 </li>
                 <li className="footer__terms-item">
-                  <a href="/contact-us" class="footer__terms-link">Terms & Conditions</a>
+                  <a href="/contact-us" className="footer__terms-link">Terms & Conditions</a>
                 </li>
               </ul>
               <strong className="footer__author">
