@@ -37,43 +37,43 @@ const Hero = () => {
             <div className="hero__form-wrapper">
               <div className="hero__signin-field">
                 <div className="hero__field-wrapper">
-                  <label for="">First Name</label>
+                  <label htmlFor="">First Name</label>
                   <input type="text" name="first-name" placeholder="First Name" />
                 </div>
               </div>
               <div className="hero__signin-field">
                 <div className="hero__field-wrapper">
-                  <label for="">Last Name</label>
+                  <label htmlFor="">Last Name</label>
                   <input type="text" name="last-name" placeholder="Last Name" />
                 </div>
               </div>
               <div className="hero__signin-field">
                 <div className="hero__field-wrapper">
-                  <label for="">Company Name*</label>
+                  <label htmlFor="">Company Name*</label>
                   <input type="text" name="company-name" placeholder="Company Name" />
                 </div>
               </div>
               <div className="hero__signin-field">
                 <div className="hero__field-wrapper">
-                  <label for="">Email*</label>
+                  <label htmlFor="">Email*</label>
                   <input type="text" name="email" placeholder="Email" />
                 </div>
               </div>
               <div className="hero__signin-field">
                 <div className="hero__field-wrapper">
-                  <label for="">Phone Number*</label>
+                  <label htmlFor="">Phone Number*</label>
                   <input type="text" name="phone-number" placeholder="Phone Number" />
                 </div>
               </div>
               <div className="hero__signin-field">
                 <div className="hero__field-wrapper">
-                  <label for="">Monthly Amazon Marketplace Revenue*</label>
+                  <label htmlFor="">Monthly Amazon Marketplace Revenue*</label>
                   <input type="text" name="revenue" placeholder="Marketplace Revenue" />
                 </div>
               </div>
               <div className="hero__signin-field">
                 <div className="hero__field-wrapper">
-                  <label for="">how much are you spending on Amazon Sponsored Products*</label>
+                  <label htmlFor="">how much are you spending on Amazon Sponsored Products*</label>
                   <input type="text" name="expenditures" placeholder="Spend on Amazon Sponsored Products" />
                 </div>
               </div>
