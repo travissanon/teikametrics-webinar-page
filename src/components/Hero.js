@@ -3,7 +3,7 @@ import React from 'react';
 import dotsLeft from '../assets/dots-left.png';
 import dotsRight from '../assets/dots-right.png';
 
-const Hero = () => {
+const Hero = ({selected}) => {
   return (
     <div className="hero">
       <div className="hero__container">

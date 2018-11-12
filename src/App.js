@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import './App.scss';
 import './styles/main.scss';
 
 import Header from './components/Header';
@@ -15,7 +14,6 @@ class App extends Component {
     super(props)
 
     this.handleNavChange = this.handleNavChange.bind(this);
-
     this.state = { selected: 1 }
   }
 
