@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>single-01</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Webinar-Landing-Page" transform="translate(-708.000000, -123.000000)" fill="#7B81EA" fill-rule="nonzero">
+            <g id="single-01" transform="translate(708.000000, 123.000000)">
+                <path d="M7.09090909,9.20833333 C9.34704545,9.20833333 11.1818182,7.30220833 11.1818182,4.95833333 L11.1818182,4.25 C11.1818182,1.906125 9.34704545,0 7.09090909,0 C4.83477273,0 3,1.906125 3,4.25 L3,4.95833333 C3,7.30220833 4.83477273,9.20833333 7.09090909,9.20833333 Z" id="Shape"></path>
+                <path d="M12.4922727,11.6922188 C9.285,10.7692604 5.71568182,10.7692604 2.50772727,11.6922188 C1.03159091,12.1172187 0,13.5218438 0,15.1092188 L0,17.3723437 L15,17.3723437 L15,15.1092188 C15,13.5218438 13.9684091,12.1172187 12.4922727,11.6922188 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
